@@ -15,4 +15,4 @@ window.getDevicePixelRatio = function () {
     return ratio;
 };
 
-alert(window.screen.width);
+//alert(window.screen.width);

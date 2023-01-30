@@ -37,8 +37,14 @@ header {
         justify-content: flex-start;
     }
 
+    .header__logo {
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+    }
+
     .header__menu {
-        flex: 1 1 auto;
+        flex: 0 1 auto;
         margin-left: 70px;
         font-weight: 500;
         font-size: 30px;
@@ -53,7 +59,7 @@ header {
     .header__search {
         display: flex;
         justify-content: flex-end;
-        flex: 0 0 274px;
+        flex: 1 1 auto;
     }
 
     .header__input {
@@ -62,8 +68,7 @@ header {
         font-size: 20px;
         font-weight: 400;
         flex-basis: 203px;
-        //flex-shrink: 0;
-        min-width: 0;
+        min-width: 100px;
 
         &::placeholder {
             color: #fff;
